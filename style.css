@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.loginArea {
+    padding: 100px;
+}
+.submitArea {
+    padding: 20px 30px;
+    box-shadow: 5px 5px 10px gray;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Transaction Area */
+#transactionArea{
+display: none;
+}
+.status {
+    color: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px grey;
+
+}
+.status h5 {
+    font-size: 33px;
+    font-weight: 700;
+}
+
+.status h2 {
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+}
+.outputArea, inputArea {
+    padding: 30px 0px;
+}
+.inputArea {
+    padding: 50px;
+}
+
+.inputForm {
+    padding: 30px;
+    background: #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+div.transactionArea {
+    padding: 20px;
+}

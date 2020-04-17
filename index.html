@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pioneer Bank</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="loginArea" class="loginArea">
+            <h1 class="text-center"><i class="fa fa-university"></i> Welcome to Pioneer Bank</h1>
+            <div class="submitArea">
+                <h3><i class="fa fa-user"></i> Login</h3>
+                <input type="text" class="form-control" placeholder="Email"> <br>
+                <input type="text" class="form-control" placeholder="Password"> <br>
+                <button id="login" class="btn btn-success"> Enter <i class="fa fa-paper-plane"></i></button>
+            </div>
+
+        </div>
+        <div id="transactionArea" class="transactionArea ">
+            <h2 class="text-center"><i class="fa fa-handshake-o"></i> Balances Transaction </h2>
+            <div class="row outputArea">
+                <div class="col-md-4 ">
+                    <div class="deposit status bg-info text-center">
+                        <h5 ><i class="fa fa-download"></i> Deposit</h5>
+                        <h2 >$ <span id="depositNumber">00</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="withdraw status bg-danger text-center">
+                        <h5><i class="fa fa-upload"></i> Withdraw</h5>
+                        <h2>$ <span id="withdrawNumber">00</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="balance status bg-success text-center">
+                        <h5><i class="fa fa-archive"></i> Balances</h5>
+                        <h2>$ <span id="totalBalance">1240</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row inputArea">
+                <div class="col-md-6">
+                    <div class="inputForm">
+                        <h4><i class="fa fa-plus-circle"></i> Deposit Amount</h4>
+                        <input type="number" id="inputNumber" class="form-control"placeholder="$ type your amounts"><br>
+                        <button onclick="deposit()" class="btn btn-success" id="deposit"> Enter <i class="fa fa-thumbs-o-up"></i> </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="inputForm">
+                        <h4><i class="fa fa-minus-circle"></i> Withdraw Amount</h4>
+                        <input type="number" id="outputNumber" class="form-control"placeholder="$ type your amounts"><br>
+                        <button onclick="withdraw()" class="btn btn-success" id="withdraw"> Enter <i class="fa fa-thumbs-o-down"></i> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
