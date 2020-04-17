@@ -9,7 +9,7 @@ loginBtn.addEventListener('click', ()=>{
   function deposit(){
     const inputNumber = document.getElementById('inputNumber').value;
     const inputAmount = parseFloat(inputNumber);
-    
+
     updateSpanText('depositNumber', inputAmount)
     updateSpanText('totalBalance', inputAmount);
     
@@ -21,15 +21,17 @@ function withdraw(){
     const outputAmount = parseFloat(outputNumber);
 
     updateSpanText('withdrawNumber', outputAmount );
-    downBalance('totalBalance', outputAmount)
+    updateSpanText('totalBalance',-1* outputAmount );
+    // downBalance('totalBalance', outputAmount)
+    
     document.getElementById('outputNumber').value = "";
 }
-function downBalance(id, outputAmount){
-    const totalBalance = document.getElementById(id).innerText;
-    const balanceAmount = parseFloat(totalBalance);
-    const avilableBalance = balanceAmount - outputAmount;
-    document.getElementById(id).innerText = avilableBalance;
-}
+// function downBalance(id, outputAmount){
+//     const totalBalance = document.getElementById(id).innerText;
+//     const balanceAmount = parseFloat(totalBalance);
+//     const avilableBalance = balanceAmount - outputAmount;
+//     document.getElementById(id).innerText = avilableBalance;
+// }
 
 function updateSpanText(id , depositMoney){
     const totalBalance = document.getElementById(id).innerText;
